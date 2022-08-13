@@ -155,7 +155,7 @@ function generatePostsHTML(i) {
             <img class="paddingRight" src="img/gps-navigation.png" alt="">
         </div>
         <div class="likeContainer">
-            <span id="nextLike">Gefällt <b>${postsList[i]['likes']} Personen.</b></span>
+            <span id="nextLike"><b>${postsList[i]['likes']}</b> Likes.</span>
         </div>
         <div class ="commentContainer">
             <div>
@@ -172,7 +172,7 @@ function generatePostsHTML(i) {
                     <input type="text" required placeholder="Kommentieren..." id="inputField${i}">
                 </div>
                 <div>
-                    <button class="clickBtnPost">Posten</button>
+                    <button class="clickBtnPost">Post</button>
                 </div>
             </div>
         </form>    
@@ -231,7 +231,7 @@ function generateNextFollowsHTML(i) {
             <span class="paddingLeft">${nextFollows[i]['name']}</span>
         </div>
         <div>
-            <span onclick = "follow(${i})" class="clickBtn">Folgen</span>
+            <span onclick = "follow(${i})" class="clickBtn">Follow</span>
         </div>
     </div>`
 }
@@ -264,7 +264,7 @@ function generateFollowsHTML(i) {
             <span class="paddingLeft">${postsList[i]['name']}</span>   
         </div>
         <div>
-            <span onclick="alertEntfollow(${i})" class="clickBtn">Entfolgen</span>
+            <span onclick="alertEntfollow(${i})" class="clickBtn">Unfollow</span>
         </div>
     </div>`
 }
@@ -317,7 +317,7 @@ function generateProfilHTML(i) {
             <span><b>${profiles[i]['name']}</b></span>
         </div>
         <div>
-            <span id="changeUser" onclick="changeUser(${i})" class="registerBtn"><b>Namen ändern</b></span>
+            <span id="changeUser" onclick="changeUser(${i})" class="registerBtn"><b>Change name</b></span>
         </div>
     </div>`
 }
@@ -352,7 +352,7 @@ function follow(i) {
  * 
  */
 function alertEntfollow(i) {
-    let text = 'Möchtest du dieser Person wirklich entfolgen?';
+    let text = 'Do you really want to unfollow this person?';
     if (confirm(text) == true) {
         nextFollows.push(postsList[i]);
         postsList.splice(i, 1);
@@ -401,7 +401,7 @@ function addComment(i) {
     inputField.innerHTML = "";
 
     if (inputField.value == "") {
-        alert("Das Feld muss befüllt werden.")
+        alert("The field must be filled.")
     } else {
         postsList[i]['newCommentary'].push(inputField.value);
     }
@@ -437,7 +437,7 @@ function deleteComment(i, j) {
 function changeUser(i) {
     let newName = (prompt("Gebe deinen gewünschten Benutzernamen ein."));
     if (isNaN(newName) == false) {
-        alert("Ein Name beginnt nicht mit einer Zahl!");
+        alert("A name doesn't start with a number!");
     } else {
         profiles[i]['ifLogedIn'] = true;
         profiles[i]['name'].push(newName);
