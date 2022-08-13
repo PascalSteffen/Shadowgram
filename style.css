@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Insta Schriftart */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Lato:wght@300&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.headerFlexDesign {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid lightgray;
+    padding: 16px 0;
+}
+
+.mainHeadlineDesign {
+    font-family: 'Oleo Script', sans-serif;
+    font-size: 30px;
+
+}
+
+.inputFlexDesign {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 8px 8px;
+    border-radius: 10px;
+}
+
+.inputFlexDesign input {
+    width: 25vw;
+}
+
+.inputFlexDesign img {
+    width: 20px;
+    padding: 0 8px;
+}
+
+.profileImage {
+    border-radius: 50%;
+    width: 30px !important;
+    height: 30px;
+
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    height: 2vh;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+.headerNavDesign {
+    display: flex;
+    align-items: center;
+}
+
+.headerNavDesign img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.paddingRight {
+    padding-right: 20px;
+}
+
+.paddingLeft {
+    padding-left: 16px;
+}
+
+.marginLeft {
+    margin-left: 20px;
+}
+
+/* Header-End */
+
+/* BodyTop */
+.mainbodyDesign {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 75px;
+
+}
+
+.calc {
+    width: calc(100% - 400px);
+}
+
+.bodyDesign {
+    display: flex;
+    width: calc(100% - 350px);
+    margin-top: 32px;
+    width: 500px;
+}
+
+.bodyRightsideDesign {
+    position: sticky;
+    top: calc(0% + 107px);
+    right: 0px;
+    background: white;
+    height: 100vh;
+    padding: 16px 16px 16px 32px;
+    min-width: 325px;
+}
+
+
+/* Dynamic Content Headline */
+.shadowgramPostDesign {
+    width: 500px;
+    border: 1px solid lightgrey;
+    margin-bottom: 32px;
+    word-break: break-word;
+}
+
+.shadowgramSecondContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.profileNameLocationFlex {
+    display: flex;
+    align-items: center;
+}
+
+.profileImageDynamicContent {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid rgb(0, 217, 255);
+    padding: 2px;
+}
+
+.NameLocationFlex {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+}
+
+.locationDesign {
+    font-size: 14px;
+    padding: 2px 0px;
+}
+
+.pointImageDesign {
+    width: 25px;
+    cursor: pointer;
+}
+
+/* Dynamic Content Image */
+
+.postImageDesign {
+    width: 500px;
+    height: auto;
+}
+
+/* Dynnimc Content Buttons */
+
+.shadowgramThirdContainer {
+    padding: 16px;
+}
+
+.shadowgramThirdContainer img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.likeContainer,
+.commentContainer,
+.inputContainer {
+    padding: 0px 16px;
+    padding-bottom: 16px;
+}
+
+.newCommentFlex {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.newCommentFlex img {
+    width: 15px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 225ms ease-in-out;
+}
+
+.newCommentFlex img:hover {
+    border: 2px solid rgb(0, 217, 255);
+    transition: all 225ms ease-in-out;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.borderline {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 16px;
+}
+
+.inputContainerFlex {
+    display: flex;
+    align-items: center;
+}
+
+.inputContainerFlex img {
+    width: 20px;
+    padding-right: 16px;
+    cursor: pointer;
+}
+
+.inputContainerFlex input {
+    width: 350px;
+}
+
+.clickBtn {
+    color: rgb(0, 152, 247);
+    cursor: pointer;
+    transition: all 75ms ease-in-out;
+}
+
+.clickBtn:hover {
+    font-weight: bold;
+    transition: all 75ms ease-in-out;
+}
+
+.clickBtnPost {
+    color: rgb(0, 152, 247);
+    cursor: pointer;
+    transition: all 75ms ease-in-out;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.clickBtnPost:hover {
+    font-weight: bold;
+    transition: all 75ms ease-in-out;
+}
+
+.registerBtn {
+    color: rgb(0, 152, 247);
+    cursor: pointer;
+    border: 2px solid rgb(0, 152, 247);
+    transition: all 225ms ease-in-out;
+    border-radius: 10px;
+    padding: 8px;
+    margin-left: 32px;
+}
+
+.registerBtn:hover {
+    background-color: rgb(0, 152, 247);
+    transition: all 225ms ease-in-out;
+    color: white;
+}
+
+/* Follow */
+
+.shadowgramFollows {
+    padding-bottom: 16px;
+}
+
+.followFlex {
+    padding-bottom: 16px;
+
+}
+
+.FollowProfilName {
+    display: flex;
+    align-items: center;
+}
+
+/* Profil-Side */
+
+.profilImageFlex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.profilImageDesign {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profilImageDesign img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.nextFollows {
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.nextFollowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+
+}
+
+.nextFollowFlex {
+    display: flex;
+    align-items: center;
+}
+
+.counterFollows {
+    background-color: rgb(0, 152, 247);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 10px;
+    margin-left: 4px;
+}
+
+/* Login Design */
+
+.registerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.registerInput {
+    padding: 32px;
+
+
+}
+
+.registerText {
+    font-size: 20px;
+    color: rgb(0, 152, 247);
+
+
+}
+
+.registerContainer {
+    border: 1px solid lightgray;
+    padding: 12px;
+    border-radius: 10px;
+
+}
+
+.registerInput input {
+    margin-top: 12px;
+    background-color: lightgray;
+    padding: 12px;
+    border-radius: 10px;
+    width: 250px;
+
+}
+
+.dNone {
+    display: none;
+    transition: all 225ms ease-in-out;
+}
+
+#loginHeadline {
+    font-size: 24px;
+    text-align: center;
+}
+
+.LoginTextDesign {
+    font-size: 16px;
+    text-align: center;
+}
+
+.profilImageFlexLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+    .bodyDesign {
+        display: flex;
+        width: unset;
+        margin-top: 170px;
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+
+    .bodyRightsideDesign {
+        position: unset;
+        top: unset;
+        right: unset;
+        background: unset;
+        height: unset;
+        padding: 0 16px;
+        width: unset;
+        margin-bottom: 32px;
+    }
+
+    .mainbodyDesign {
+        display: unset;
+        margin-top: 75px;
+    }
+
+    .headerFlexDesign {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 1;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+        border-bottom: 1px solid lightgray;
+        padding: 16px 0;
+    }
+
+    .postImageDesign {
+        width: 100%;
+        height: auto;
+    }
+
+    .shadowgramPostDesign {
+        width: 100%;
+        border: 1px solid lightgrey;
+        margin-bottom: 32px;
+        word-break: break-word;
+    }
+
+    .inputContainerFlex input {
+        width: unset;
+    }
+
+    .inputFlexDesign {
+        display: flex;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 8px 8px;
+        border-radius: 10px;
+        width: 60vw;
+        margin: 16px 0;
+    }
+
+    #shadowgramProfil {
+        margin-top: 16px;
+    }
+
+    #shadowgramNextFollows {
+        margin-bottom: 32px;
+    }
+
+    .popUp {
+        position: fixed;
+        background-color: white;
+        left: 0;
+        right: 0;
+        top: calc(0% + 172px);
+        width: unset;
+        height: 100vh;
+        transform: translateX(0px);
+        transition: all 225ms ease-in-out;
+        max-height: calc(100vh - 172px);
+        overflow-y: scroll;
+        margin-bottom: 12px;
+    }
+
+    .popUpTransform {
+        transform: translateX(+1000px) !important;
+        transition: all 225ms ease-in-out;
+    }
+
+    .clickBtn {
+        margin-right: 100px;
+    }
+
+    .profilImageFlexLogin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .profilImageDesign {
+        margin-bottom: 16px;
+        margin-right: 32px;
+    }
+
+    .registerBtn {
+        margin-left: unset;
+    }
+
+    .bodyRightsideDesign {
+        min-width: unset;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    #loginHeadline {
+        font-size: 18px !important;
+    }
+
+    .bodyRightsideDesign {
+        min-width: unset;
+    }
+
+    .clickBtn {
+        margin-right: unset;
+    }
+
+}
+
+@media (max-width: 280px) {
+    .clickBtnPost {
+        font-size: 12px;
+    }
+}

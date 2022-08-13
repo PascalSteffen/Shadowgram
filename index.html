@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadowgram</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body onload="render()">
+
+    <!-- Header -->
+    <div class="headerFlexDesign">
+        <div>
+            <span class="mainHeadlineDesign">Shadowgram</span>
+        </div>
+        <div class="inputFlexDesign">
+            <img src="img/lupe.png" alt="">
+            <input id="search" onchange="filterNames()" type="text" placeholder="Suchen">
+        </div>
+        <div class="headerNavDesign">
+            <img class="paddingRight" src="img/haus.png" alt="">
+            <img class="paddingRight" src="img/gps-navigation.png" alt="">
+            <img class="paddingRight" src="img/plus.png" alt="">
+            <img class="paddingRight" src="img/heart_empty.png" alt="">
+            <img id="openResponsive" onclick="openResponsive()" class="profileImage" src="img/profilImage.png" alt="">
+            <img id="closeResponsive" onclick="closeResponsive()" class="profileImage dNone" src="img/profilImage.png"
+                alt="">
+        </div>
+    </div>
+    <!-- HeaderEnd -->
+    <!-- Body -->
+    <div id="mainBody" class="mainbodyDesign">
+        <div class="bodyDesign">
+            <div id="shadowgramPosts"></div>
+            <div id="loginDesign" class="bodyRightsideDesign loginDesign popUp popUpTransform">
+                <div class="LoginTextDesign">
+                    <h1 id="loginHeadline">Willkommen bei Shadowgram</h1>
+                    <span id="loginText">Bitte vergebe dir einen Namen, um in die Shadowgramwelt einzutauchen.</span>
+                </div>
+                <div id="shadowgramProfil"></div>
+                <div>
+                    <span id="currentFollows" class="nextFollows">Du folgst</span>
+                    <span id="counterFollows" class="counterFollows">0</span>
+                </div>
+                <div>
+                    <div class="shadowgramFollows" id="shadowgramFollows"></div>
+                </div>
+                <div>
+                    <span id="nextFollows" class="nextFollows">Vorschläge für dich</span>
+                </div>
+                <div id="shadowgramNextFollows" class="dNone"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
